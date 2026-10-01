@@ -245,19 +245,19 @@ footer a{color:var(--brand);text-decoration:none}
 var WA = "5492645252045";
 
 var RUBROS = [
-  ["kiosco","🏪","Kiosco y almacen","Caja, stock, fiado y lista de precios que el cliente ve en su celular."],
+  ["kiosco","🏪","Kiosco y almacén","Caja, stock, fiado y lista de precios que el cliente ve en su celular."],
   ["veterinaria","🐾","Veterinaria","Agenda de turnos, ficha de mascota con próxima vacuna y desparasitación, ventas y stock."],
-  ["corralon","🧱","Corralon","Pedidos y cotizaciones con total, stock y clientes de la obra."],
-  ["ferreteria","🔧","Ferreteria","Pedidos, herramientas, stock y venta de mostrador."],
-  ["panaderia","🥐","Panaderia","Vencimientos, producción del día con merma calculada, ventas y stock."],
-  ["carniceria","🥩","Carniceria","Venta por peso, stock y clientes."],
-  ["farmacia","💊","Farmacia","Vencimientos por lote, stock y ventas."],
-  ["barberia","💈","Barberia","Agenda de turnos, servicios, precios y ficha del cliente."],
-  ["heladeria","🍦","Heladeria","Vencimientos, sabores del día con stock y pedido de reposición, ventas y stock de vasados."],
-  ["libreria","📚","Libreria","Encargos, titulos, stock y ventas."],
-  ["verduleria","🥬","Verduleria","Precio por kilo del dia, stock y pedidos."],
+  ["corralon","🧱","Corralón","Pedidos y cotizaciones con total, stock y clientes de la obra, más cortes por metro con el sobrante de cada barra."],
+  ["ferreteria","🔧","Ferretería","Pedidos, herramientas, stock y venta de mostrador."],
+  ["panaderia","🥐","Panadería","Vencimientos, producción del día con merma calculada, ventas y stock."],
+  ["carniceria","🥩","Carnicería","Venta por peso, stock y clientes."],
+  ["farmacia","💊","Farmacia","Vencimientos por lote, stock y ventas, más control de recetas con próxima dispensa y aviso cuando vence."],
+  ["barberia","💈","Barbería","Agenda de turnos, servicios, precios y ficha del cliente."],
+  ["heladeria","🍦","Heladería","Vencimientos, sabores del día con stock y pedido de reposición, ventas y stock de vasados."],
+  ["libreria","📚","Librería","Encargos, títulos, stock y ventas, más lista de reposición con aviso en la última unidad."],
+  ["verduleria","🥬","Verdulería","Precio por kilo del día, stock y pedidos."],
   ["indumentaria","👕","Indumentaria","Matriz de talle y color con stock real por variante, pedidos con total y venta de mostrador."],
-  ["estetica","✨","Estetica","Agenda de turnos, catalogo de servicios, insumos y ventas."]
+  ["estetica","✨","Estética","Agenda de turnos, catálogo de servicios, insumos y ventas."]
 
 ];
 
@@ -265,7 +265,7 @@ var grid = document.getElementById("grid");
 var html = "";
 for (var i=0;i<RUBROS.length;i++){
   var r = RUBROS[i];
-  html += '<a class="r" href="https://alex451-bip.github.io/sistema-'+r[0]+'/" target="_blank" rel="noopener">'+
+  html += '<a class="r" href="rubros/'+r[0]+'.html">'+
           '<span class="go">›</span>'+
           '<span class="e">'+r[1]+'</span>'+
           '<div class="n">'+r[2]+'</div>'+
